@@ -1,23 +1,41 @@
 /* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
 *{
-    box-sizing: 0;
-    margin:0;
+box-sizing: 0;
+margin:0;
 }
 body,html{
-    height:100%;
-    width:100%;
-    background-color:black;
-
+width:100%;
+font-family: 'Poppins', sans-serif;
+}
+body{
+background-color:black;
+cursor: url(/images/cursor-modificado.gif),auto;
 }
 
+.background{
+position:absolute;
+opacity:0.3;
+z-index:-1;
+object-fit: cover;
+width:100%;
+height:222%;
+background-size:cover;
+display:block;
+filter:blur(4px)
+
+}
+/* style of nav bar */
+
 .nav_bar{
-    display:flex;
-    background-color:rgb(0, 0, 0);
-    align-items:center;
-    justify-content: center;
-    justify-content: space-between;
-    color:white;
-    padding:2vh 1vh;
+display:flex;
+background-color:rgb(0, 0, 0);
+align-items:center;
+justify-content: center;
+justify-content: space-between;
+color:white;
+padding:2vh;
 }
 .nav_bar  ul{
 display:flex;
@@ -27,89 +45,226 @@ padding:0vh 0.5vh;
 
 }
 .nav_bar li{
-    list-style: none;
-    padding:0vh 0.5vh;
+list-style: none;
+padding:0vh 0.5vh;
+font-size:1.5vh;
+}
+.nav_bar a{
+font-size:1.5vh;
+padding:0.5vh 1.5vh;
+border-radius:1vh;
+background: linear-gradient(335deg, rgba(64,64,64,1) 0%, rgba(31,101,22,1) 100%);
 }
 
 .banner{
-    width:100%;
-    height:30vh;
-    object-fit: cover;
-    opacity:0.75;
+width:100%;
+height:25vh;
+object-fit: cover;
+opacity:0.9;
 }
+
 
 
 /* estyle of select your instrument */
 
 .select_instrument{
-    display:flex;
-    flex-direction:column;
-    color:white;
-    text-align:center;
+display:flex;
+flex-direction:column;
+color:white;
+text-align:center;
+margin-top:-1vh;
+margin-bottom:2vh;
 }
 
 /*  espacio para el text */
-.select_instrument h6{
-
+.select_instrument h5{
+font-size:2vh;
+font-weight: 300;
+margin:3vh 2vh;
+margin-top:4vh;
 }
 .select_instrument h2{
-
+font-size:4vh;
+font-weight: 800;
+margin: 1vh 0vh 3vh 0vh ;
 }
 
 /* seccion para instrumentos */
 .container_instruments{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
+display:flex;
+flex-wrap:wrap;
+justify-content: space-around;
 }
 
 .instrument{
-    width:37vh;
-    height:37vh;
-    background-color:rgb(106, 97, 97);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    transition:0.5s;
-    margin:1vh;
+width:37vh;
+height:37vh;
+background-color:rgb(179, 179, 179);
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+transition:0.5s;
+margin:4vh;
+border-radius:1vh;
+box-shadow:3px 3px 3px 0px rgba(0, 0, 0, 0.79);
 }
 .instrument:hover{
-    width:37vh;
-    height:37vh;
-    transition:0.5s;
+width:38vh;
+height:38vh;
+transition:0.5s;
 }
 
 .instrument h3{
-    text-shadow:1px 1px 1px black;
-    
+text-shadow:1px 1px 5px rgba(0, 0, 0, 0.888);
+color:white;
+font-size:4vh;
+font-weight: 800;
 }
+
+.piano{
+    background-image:url("/images/piano.jpg");
+    background-size:cover;
+    filter:blur(0.2px);
+}
+.drums{
+    background-image:url("/images/bateria.webp");
+    background-size:cover;
+    filter:blur(0.2px);
+}
+.marimba{
+    background-image:url("/images/marimba.jpg");
+    background-size:cover;
+    filter:blur(0.2px);
+}
+
+
 
 
 /* play like masters */
-/* .play_masters{
-    width:100;
-    display:flex;
-    flex-direction:column;
-}*/
+.play_masters{
+width:100;
+display:flex;
+flex-direction:column;
+margin:1vh;
+
+}
+.play_masters h2{
+color:#fff;
+font-size:4vh;
+font-weight: 800;
+margin: 3vh 1vh 3vh 2vh ;
+}
 
 .container_carrusel{
-    display:flex; 
-    flex-wrap:nowrap;
-    overflow-wrap: scroll;
-    justify-content:space-around;
-    cursor:grab; 
+display:flex; 
+overflow-x: scroll;
+cursor:auto;
+
+
+}
+
+::-webkit-scrollbar{
+background-color:transparent;
 }
 .video{
-    height:35vh;
-    width:40vh;
-    margin:2vh;
-    border-radius:1vh;
-    background-color:gray;
+height:20vh;
+width:40vh;
+margin:2vh;
+border-radius:1vh;
+min-width:35vh;
+transition:0.5;
+opacity:0.8;
+box-shadow:3px 3px 3px 0px rgba(0, 0, 0, 0.79);
+
 }
 .video:hover{
-    height:35.5vh;
-    width:40.5vh;
+min-width:35.5vh;
+height:20.5vh;
+transition:0.5s;
 } 
+/* estyle of banner */
+.banner_number2{
+display:flex;
+align-items:center;
+justify-content: center;
+opacity:0.7;
+margin:5vh 0vh;
+}
+.banner_number2 h2{
+position:absolute;
+color:white;
+}
+
+/* join the comunity styles */
+.join_comunity {
+width:100;
+display:flex;
+flex-direction:column;
+margin:1vh;
+}
+.join_comunity h2{
+color:#fff;
+font-size:4vh;
+font-weight: 800;
+margin: 3vh 1vh 3vh 2vh ;
+
+}
 
 
+@media (min-width:629px){
+    .nav_bar{
+        padding:3vh 4vh;
+    }
+    .logo{
+        font-size:3vh;
+    }
+    .nav_bar li{
+        font-size:2.5vh;
+    }
+    .nav_bar a{
+        font-size:2vh;
+        padding:2vh 4vh;
+    }
+    .banner, .banner2{
+        height:50vh;
+    }
+
+    /*  fin del header */
+    .select_instrument{
+        
+    }
+    .select_instrument h5{
+        font-size:3.5vh;
+        margin:5.5vh;
+    }
+    .select_instrument h2{
+        font-size:6.5vh;
+        margin:5vh;
+    }
+    .instrument{
+        width:50vh;
+        height:50vh;
+    }
+    .instrument h3{
+        font-size:6.5vh;
+    }
+
+    /*  play masters */
+    .play_masters h2, .join_comunity h2{
+        font-size:6.5vh;
+        margin-top:15vh;
+        margin-left: 15vh;
+    }
+    .container_carrusel{
+        margin:9vh ;
+    }
+
+    .video{
+        height:35vh;
+        min-width:60vh;
+        margin:3vh;
+    }
+
+    
+}

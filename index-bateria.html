@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toquen el DOM</title>
+    <link rel="stylesheet" href="style-bateria.css">
+
+</head>
+    <body>
+        <container class="menus">
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn cerrar" onclick="closeNav()">&times;</a>
+				<h2>CONTROLS</h2>
+				<p>Kick: A | Snare: S | Hihat: D | Tom 1: Q | Tom 2: W | Tom 3: E | Crash 1: R | Crash 2: T | Ride: F</p>
+                <h2> BEATS</h2>
+                <P>Beat 1:<br>K + A + S + A + S</P>
+                <P>Beat 2:<br>K + A + S + A + S</P>
+                <P>Beat 3:<br>K + A + S + A + S</P>
+                <P>Beat invocar al bibliotecario:<br>Q + S + S + A + D</P>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="boton-cerrar"> >> </span>            
+            <div id="mySidenav2" class="sidenav2">
+                <a href="javascript:void(0)" class="closebtn2 cerrar" onclick="closeNav2()">&times;</a>
+                <h2><b>Tutorials</b></h2> 
+                <div class="contenedor--videos">
+                    <iframe width="260" height="155" src="https://www.youtube.com/embed/HqQT28ro4q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="decoration-videos"></iframe>
+                    <iframe width="260" height="155" src="https://www.youtube.com/embed/aLzICL_gPgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="decoration-videos"></iframe>
+                    <iframe width="260" height="155" src="https://www.youtube.com/embed/HqQT28ro4q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="decoration-videos"></iframe>
+            </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav2()" id="boton-cerrar2"><<</span>
+
+        </container>
+            <container class="bateria">
+                <img src="images/bibliotecario1.png" id="kick"    class="kick p-bateria" onclick="audio_1.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="snare"   class="snare p-bateria" onclick="audio_2.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="hihat"   class="hihat p-bateria" onclick="audio_3.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="tom-1"   class="tom-1 p-bateria" onclick="audio_4.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="tom-2"   class="tom-2 p-bateria" onclick="audio_5.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="tom-3"   class="tom-3 p-bateria" onclick="audio_6.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="crash-1" class="crash-1 p-bateria" onclick="audio_7.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="crash-2" class="crash-2 p-bateria" onclick="audio_8.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="ride"    class="ride p-bateria" onclick="audio_9.play() , makeSound(key) ">
+                <img src="images/bibliotecario1.png" id="elboton"    class="ride p-bateria" onclick=" makeSound(key) ">
+                <img src="images/imgbateria.png" class="imgbateria">
+                <img src="images/bibliotecario2.png" onclick="sonido.play()"  class="bibliotecario">
+            </container>    
+        <script src="bateria.js"></script>
+    </body>
+</html> 
+        
