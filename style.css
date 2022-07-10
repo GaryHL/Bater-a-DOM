@@ -1,0 +1,115 @@
+/* Estilos generales */
+*{
+    box-sizing: 0;
+    margin:0;
+}
+body,html{
+    height:100%;
+    width:100%;
+    background-color:black;
+
+}
+
+.nav_bar{
+    display:flex;
+    background-color:rgb(0, 0, 0);
+    align-items:center;
+    justify-content: center;
+    justify-content: space-between;
+    color:white;
+    padding:2vh 1vh;
+}
+.nav_bar  ul{
+display:flex;
+margin:0;
+padding:0;
+padding:0vh 0.5vh;
+
+}
+.nav_bar li{
+    list-style: none;
+    padding:0vh 0.5vh;
+}
+
+.banner{
+    width:100%;
+    height:30vh;
+    object-fit: cover;
+    opacity:0.75;
+}
+
+
+/* estyle of select your instrument */
+
+.select_instrument{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+/*  espacio para el text */
+.select_instrument h6{
+
+}
+.select_instrument h2{
+
+}
+
+/* seccion para instrumentos */
+.container_instruments{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.instrument{
+    width:37vh;
+    height:37vh;
+    background-color:rgb(106, 97, 97);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    transition:0.5s;
+    margin:1vh;
+}
+.instrument:hover{
+    width:37vh;
+    height:37vh;
+    transition:0.5s;
+}
+
+.instrument h3{
+    text-shadow:1px 1px 1px black;
+    
+}
+
+
+/* play like masters */
+/* .play_masters{
+    width:100;
+    display:flex;
+    flex-direction:column;
+}*/
+
+.container_carrusel{
+    display:flex; 
+    flex-wrap:nowrap;
+    overflow-wrap: scroll;
+    justify-content:space-around;
+    cursor:grab; 
+}
+.video{
+    height:35vh;
+    width:40vh;
+    margin:2vh;
+    border-radius:1vh;
+    background-color:gray;
+}
+.video:hover{
+    height:35.5vh;
+    width:40.5vh;
+} 
+
+
