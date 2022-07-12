@@ -123,17 +123,17 @@ font-weight: 800;
 }
 
 .piano{
-    background-image:url("/images/piano.jpg");
+    background-image:url("./images/piano.jpg");
     background-size:cover;
     filter:blur(0.2px);
 }
 .drums{
-    background-image:url("/images/bateria.webp");
+    background-image:url("./images/bateria.webp");
     background-size:cover;
     filter:blur(0.2px);
 }
 .marimba{
-    background-image:url("/images/marimba.jpg");
+    background-image:url("./images/marimba.jpg");
     background-size:cover;
     filter:blur(0.2px);
 }
