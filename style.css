@@ -246,6 +246,10 @@ margin: 3vh 1vh 3vh 2vh ;
         width:50vh;
         height:50vh;
     }
+    .instrument:hover{
+        width:51vh;
+        height:51vh;
+    }
     .instrument h3{
         font-size:6.5vh;
     }
